@@ -4,13 +4,31 @@ Description: Stylesheet for main page of personal website
 Author: Tucker Klutey
 */
 
+/***** General Styles *****/
+section {
+    text-align: center;
+}
+
+/***** Class Styles *****/
+.card {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 4em;
+}
+
+.announcement {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+/***** ID Styles *****/
 #home{
     height: 100vh;
     width: 100%;
     background-color: white;
 }
 #about{
-    height: 100vh;
+/*    height: 90vh;*/
     width: 100%;
     background-color: red;
 }
