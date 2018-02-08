@@ -9,16 +9,37 @@ section {
     text-align: center;
 }
 
+footer {
+    background-color: gray;
+    bottom: 0;
+    padding-top: 80px;
+
+}
+
 /***** Class Styles *****/
 .card {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 4em;
+    margin: 0 2em 4em;
 }
 
 .announcement {
-    margin-top: 4em;
-    margin-bottom: 4em;
+    margin: 4em 0;
+}
+
+.btn-circle.icon {
+    margin: 0 1em;
+    padding: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+}
+
+.btn-toolbar {
+    display: inline-block;
+}
+
+.center {
+    height: inherit;
+    vertical-align: middle;
 }
 
 /***** ID Styles *****/
@@ -36,9 +57,4 @@ section {
     height: 100vh;
     width: 100%;
     background-color: blue;
-}
-#contact{
-    height:40vh;
-    width: 100%;
-    background-color: gray;
 }
