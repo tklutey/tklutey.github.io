@@ -40,7 +40,29 @@ footer {
 
 .center {
     height: inherit;
-    vertical-align: middle;
+    align-items: center;
+    display: inline-flex;
+}
+
+.bottom-bar {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.holder {
+    position: relative;
+}
+
+.centerflex{
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anim{
+    -webkit-transform:translate(0, -45vh);
 }
 
 /***** ID Styles *****/
@@ -48,6 +70,17 @@ footer {
     height: 100vh;
     width: 100%;
     background-color: white;
+}
+
+#logo{
+    padding: 5px;
+    display: inline-block;
+    border-style: solid;
+}
+
+#logobox{
+    -webkit-transition: -webkit-transform 2s ease-in-out;
+    max-width: 50%;
 }
 #about{
 /*    height: 90vh;*/

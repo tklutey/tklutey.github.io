@@ -2,7 +2,6 @@
 
 <html>
     <head>
-        <author>Tucker Klutey</author>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- Latest compiled and minified jquery -->
@@ -18,16 +17,30 @@
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         
         <!-- Font Awesome -->
-        <script defer src="static/fontawesome-all.js" ></script>
+        <script defer src="scripts/fontawesome-all.js" ></script>
+        
+        <!-- Custom js -->
+        <script src="scripts/main.js"></script>
+        
 
     </head>
     
     <body>
         
-        <div id="home">
+        <div id="home" class="holder">
+            <div class="centerflex">
+                <div id="logobox">
+                    <h1 id="logo"> TK </h1>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <a href=#about class="btn btn-default btn-circle icon">
+                    <span class="glyphicon glyphicon-chevron-down center middle" aria-hidden="true"></span>
+                </a>
+            </div>
         </div>
         
-        <section id="about">
+        <section id="about" class="holder">
             <div class="container">
                 <div class="row announcement">
                     <h1> About </h1>
@@ -56,13 +69,23 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
+            <div class="bottom-bar">
+                <a href=#resume class="btn btn-default btn-circle icon">
+                    <span class="glyphicon glyphicon-chevron-down center middle" aria-hidden="true"></span>
+                </a>
+            </div>
         </section>
         
-        <div id="resume">
+        <div id="resume" class="holder">
+            <div class="bottom-bar">
+                <a href=#contact class="btn btn-default btn-circle icon">
+                    <span class="glyphicon glyphicon-chevron-down center middle" aria-hidden="true"></span>
+                </a>
+            </div>
         </div>
         
-        <footer>
+        <footer id="contact">
             <div class="text-center">
                 <div class="btn-toolbar">
                     <a href=# class="btn btn-default btn-circle icon">
@@ -77,8 +100,6 @@
                 </div>
             </div>
         </footer>
-
-
     
     </body>
 
