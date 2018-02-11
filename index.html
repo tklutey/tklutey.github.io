@@ -23,20 +23,91 @@
         <script src="scripts/main.js"></script>
         
 
+        <style>
+            .img-downsize {
+                max-width: 80%;
+                max-height: 70vh;
+            }
+            
+            .slow-fade {
+                -webkit-animation: fadein 5s;
+            }
+            
+            @-webkit-keyframes fadein {
+                0% { opacity: 0; }
+                50% { opacity: 0; }
+                75% { opacity: 1; }
+                100%   { opacity: 1; }
+            }
+            
+            
+            .center-block {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            
+            .bottom-margin {
+                margin-bottom: 25px;
+            }
+            
+            .equal {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+            .block-valign {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+            }
+            
+        </style>
     </head>
     
     <body>
         
-        <div id="home" class="holder">
-            <div class="centerflex">
-                <div id="logobox">
-                    <h1 id="logo"> TK </h1>
+        <div id="home">
+            <div class="container-fluid">
+                <div class="row bottom-margin">
+                    <div class="col-sm-5">
+                    </div>
+                    <div class="col-sm-2">
+                        <div id="logobox" class="center-block">
+                            <h1 id="logo"> TK </h1>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                    </div>
                 </div>
-            </div>
-            <div class="bottom-bar">
-                <a href=#about class="btn btn-default btn-circle icon">
-                    <span class="glyphicon glyphicon-chevron-down center middle" aria-hidden="true"></span>
-                </a>
+                <div class="row bottom-margin slow-fade equal">
+                    <div class="col-sm-6">
+                        <div class="text-center">
+                            <img src="images/main.jpg" class="img-downsize img-rounded bottom-margin">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="block-valign">
+                            <p class="bottom-margin">asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdfa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bottom-margin">
+                    <div class="col-sm-5">
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="text-center">
+                            <a href=#about class="btn btn-default btn-circle icon">
+                                <span class="glyphicon glyphicon-chevron-down center middle" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                    </div>
+                </div>
             </div>
         </div>
         
