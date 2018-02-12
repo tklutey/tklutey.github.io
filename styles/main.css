@@ -22,10 +22,6 @@ footer {
     margin: 0 2em 4em;
 }
 
-.announcement {
-    margin: 4em 0;
-}
-
 .btn-circle.icon {
     margin: 0 1em;
     padding: 0;
@@ -38,12 +34,6 @@ footer {
     display: inline-block;
 }
 
-.center {
-    height: inherit;
-    align-items: center;
-    display: inline-flex;
-}
-
 .bottom-bar {
     position: absolute;
     bottom: 10px;
@@ -52,13 +42,6 @@ footer {
 
 .holder {
     position: relative;
-}
-
-.centerflex{
-    height: 100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .anim{
@@ -106,6 +89,8 @@ footer {
     align-content: center;
     flex-direction: column;
 }
+
+
 
 /***** ID Styles *****/
 #home{
