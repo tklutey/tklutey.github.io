@@ -49,11 +49,6 @@ footer {
     transition-delay: 1s !important;
 }
 
-.img-downsize {
-    max-width: 80%;
-    max-height: 70vh;
-}
-
 .slow-fade {
     -webkit-animation: fadein 5s;
 }
@@ -90,11 +85,20 @@ footer {
     flex-direction: column;
 }
 
+.full-size {
+    height: inherit;
+    max-width: 100%;
+}
 
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 /***** ID Styles *****/
 #home{
     background-color: #fbf8ef;
+    height: 100vh;
 }
 
 #logo{
@@ -118,3 +122,27 @@ footer {
     width: 100%;
     background-color: #bc6a29;
 }
+
+#profile-img {
+    background: url(../images/main.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: left;
+}
+
+/***** Media queries *****/
+@media only screen and (max-width: 992px) {
+    [class*="col-md-5"] {
+        height: 41%;
+
+    }
+    [class*="col-md-2"] {
+        height: 18%;
+    }
+
+    [id*="profile-img"] {
+        background-position: center !important;
+    }
+}
+
